@@ -6,9 +6,11 @@
   "scripts": {
     "start": "webpack serve --mode=development --stats-error-details",
     "build": "webpack --mode=production; phaser-asset-pack-hashing -r dist",
+    "editor": "phasereditor2d-launcher -project . -port 1959",
+    "editor-remote": "phasereditor2d-launcher -project . -disable-open-browser -public -port 1959",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Arian Fornaris <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
+  "author": "Phaser Editor 2D <developers@phasereditor2d.com> (https://phasereditor2d.com/)",
   "license": "MIT",
   "dependencies": {
     "phaser": "^3.55.0"
@@ -18,6 +20,7 @@
     "copy-webpack-plugin": "^8.1.0",
     "html-webpack-plugin": "^5.3.1",
     "phaser-asset-pack-hashing": "^1.0.5",
+    "phasereditor2d-launcher": "^3.30.0-beta.1",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^5.28.0",
