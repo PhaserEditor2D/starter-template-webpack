@@ -1,4 +1,6 @@
-# Webpack + TypeScript project template for Phaser 3 & Phaser Editor 2D
+# Webpack + TypeScript project template for Phaser Editor 2D
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-webpack)
 
 A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor 2D v3.
 
@@ -27,6 +29,33 @@ This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npm
     ```
 
     It is generated in the `/dist` folder.
+
+## Run the editor
+
+* You can run the editor using the `editor` NPM script, defined in the `package.json` file:
+
+    ```bash
+    $ npm install
+    $ npm run editor
+    ```
+
+* If you are in a remote environment (like the Gitpod.io IDE), then run the editor like this:
+
+    ```bash
+    $ npm run editor-remote
+    ```
+
+* If you want to see all the editor options, run:
+
+    ```bash
+    $ npx phasereditor2d-launcher -help
+    ```
+
+* If Phaser Editor 2D Core is globally installed, you can run:
+
+    ```bash
+    $ PhaserEditor2D -project .
+    ```
 
 ## Phaser Editor 2D considerations
 
@@ -62,10 +91,9 @@ Webpack is configured to include the content hash of a file defined in an asset 
 
 Learn more about the [phaser-asset-pack-hashing](https://www.npmjs.com/package/phaser-asset-pack-hashing) tool.
 
-
 ### Coding
 
-The `/src` folder contains all the JavaScript code, including the scene and user component files, in addition to the Phaser Editor 2D compilers output.
+The `/src` folder contains all the TypeScript code, including the scene and user component files, in addition to the Phaser Editor 2D compilers output.
 
 We recommend using Visual Studio Code for editing the code files.
 
