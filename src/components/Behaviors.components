@@ -4,10 +4,13 @@
             "name": "PushOnClick",
             "baseClass": "UserComponent",
             "gameObjectType": "Phaser.GameObjects.Image",
-            "properties": [],
-            "listenStart": true,
-            "listenUpdate": false,
-            "listenDestroy": false
+            "properties": []
+        },
+        {
+            "name": "PreloadText",
+            "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Text",
+            "properties": []
         }
     ],
     "meta": {
