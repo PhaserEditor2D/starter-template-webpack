@@ -8,10 +8,21 @@ module.exports = {
     entry: {
         main: "./src/index.ts"
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                phaser: {
+                    test: /[\\/]node_modules[\\/]phaser[\\/]/,
+                    name: "phaser",
+                    chunks: "all",
+                },
+            }
+        }
+    },
     output: {
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname, "dist"),
         filename: "[name]-[contenthash].bundle.js",
-        assetModuleFilename: "asset-packs/[name]-[hash][ext][query]"
+        assetModuleFilename: "asset-packs/[name]-[hash][ext][query]",
     },
     module: {
         rules: [
@@ -32,7 +43,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         static: {
-            directory:path.resolve(__dirname, "./dist"),
+            directory: path.resolve(__dirname, "./dist"),
         },
         open: true,
         hot: true,
