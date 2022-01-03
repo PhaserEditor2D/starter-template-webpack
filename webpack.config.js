@@ -42,6 +42,9 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true,
+        allowedHosts: [
+            '.gitpod.id',
+        ],
         static: {
             directory: path.resolve(__dirname, "./dist"),
         },
