@@ -3,6 +3,7 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-webpack)
 
 A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor 2D v3.
+It also includes a workflow for deploying the game to GitHub Pages.
 
 ## First steps
 
@@ -29,6 +30,22 @@ This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npm
     ```
 
     It is generated in the `/dist` folder.
+
+## Deploy to GitHub Pages
+
+If you are looking for a hosting for you game, GitHub Pages is a very nice option.
+This repository includes a workflow for publishing the game into GitHub Pages automatically.
+
+Just follow this steps:
+
+* Create a GitHub repository with the project (something that probably you already did).
+* In GitHub, open the repository and go to **Settings** > **GitHub Pages**.
+* In the **Build and deployment** section, select as **Source** the **GitHub Actions** option.
+* Run the **Build game with webpack** workflow in the **Actions** section on the repository.
+* When the workflow completes, return to the **Settings** > **GitHub Pages** section and check the address for the deployed game.
+* Next time you push changes to the `main` branch it will run the workflow and deploy the game automatically.
+
+If you don't want to deploy your game to GitHub Pages, then you can remove the `.github/workflows/main.yml` file.
 
 ## Run the editor
 
