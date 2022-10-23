@@ -31,18 +31,18 @@ This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npm
 
     It is generated in the `/dist` folder.
 
-## Deploy to GitHub Pages
+## Hosting your game on GitHub Pages
 
-If you are looking for a hosting for you game, GitHub Pages is a very nice option.
+If you are looking for a hosting for you game, GitHub Pages is a very nice and free option.
 This repository includes a workflow for publishing the game into GitHub Pages automatically.
 
-Just follow this steps:
+Just follow these steps:
 
 * Create a GitHub repository with the project (something that probably you already did).
 * In GitHub, open the repository and go to **Settings** > **GitHub Pages**.
-* In the **Build and deployment** section, select as **Source** the **GitHub Actions** option.
+* In the **Build and deployment** section, set the **GitHub Actions** option in the **Source** parameter.
 * Run the **Build game with webpack** workflow in the **Actions** section on the repository.
-* When the workflow completes, return to the **Settings** > **GitHub Pages** section and check the address for the deployed game.
+* When the workflow completes, return to the **Settings** > **GitHub Pages** section and check the address for the deployed game. It should show a message like **Your site is live at https://\<USERNAME>.github.io/<REPOSITORY_NAME>/**.
 * Next time you push changes to the `main` branch it will run the workflow and deploy the game automatically.
 
 If you don't want to deploy your game to GitHub Pages, then you can remove the `.github/workflows/main.yml` file.
@@ -120,6 +120,6 @@ In many tutorials about Phaser Editor 2D, the JavaScript files are loaded using 
 
 The Scenes and User Components are configured to compile to TypeScript ES modules. Also, the compilers auto-import the classes used in the generated code.
 
-## Author
+## About
 
-Created and maintained by the Phaser Editor 2D team.
+This project template was created by the Phaser Editor 2D team.
