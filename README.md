@@ -13,6 +13,7 @@ This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npm
 
     ```
     npm install
+    npm update
     ```
 
 * Run the development server:
@@ -52,7 +53,6 @@ If you don't want to deploy your game to GitHub Pages, then you can remove the `
 * You can run the editor using the `editor` NPM script, defined in the `package.json` file:
 
     ```bash
-    $ npm install
     $ npm run editor
     ```
 
