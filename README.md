@@ -40,9 +40,9 @@ This is what Gitpod does:
 
 - Creates a workspace for this project.
 - Opens VS Code to edit this repo.
-- Install & update the dependencies of this repo.
+- Installs & updates the dependencies of this repo.
 - Runs the Webpack development server in port `8080`.
-- Runs Phaser Editor 2D Core serber in port `1959`.
+- Runs Phaser Editor 2D Core server in port `1959`.
 
 In the **Ports** panel in VS Code, it shows the links for opening the game (port `8080`) & the editor (port `1959`). It gives you the options of copy the URL, open the URL in a preview panel, or open the URL in a new tab.
 
