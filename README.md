@@ -5,20 +5,6 @@
 A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor 2D v3.
 It also includes a workflow for deploying the game to GitHub Pages.
 
-## Gitpod
-
-This repository is ready for start coding in Gitpod, a Cloud Development Environment. You only need to [click on this link](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-webpack) for starting a new workspace.
-
-This is what Gitpod does:
-
-- Creates a workspace for this project.
-- Opens VS Code to edit this repo.
-- Install & update the dependencies of this repo.
-- Runs the Webpack development server in port `8080`.
-- Runs Phaser Editor 2D Core serber in port `1959`.
-
-In the **Ports** panel in VS Code, it shows the links for opening the game (port `8080`) & the editor (port `1959`). It gives you the options of copy the URL, open the URL in a preview panel, or open the URL in a new tab.
-
 ## First steps
 
 This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npmjs.com). It is recommended that you learn the basics of [Webpack.js](https://webpack.js.org).
@@ -45,6 +31,20 @@ This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npm
     ```
 
     It is generated in the `/dist` folder.
+
+## Gitpod
+
+This repository is ready for start coding in Gitpod, a Cloud Development Environment. You only need to [click on this link](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-webpack) for starting a new workspace.
+
+This is what Gitpod does:
+
+- Creates a workspace for this project.
+- Opens VS Code to edit this repo.
+- Install & update the dependencies of this repo.
+- Runs the Webpack development server in port `8080`.
+- Runs Phaser Editor 2D Core serber in port `1959`.
+
+In the **Ports** panel in VS Code, it shows the links for opening the game (port `8080`) & the editor (port `1959`). It gives you the options of copy the URL, open the URL in a preview panel, or open the URL in a new tab.
 
 ## Hosting your game on GitHub Pages
 
