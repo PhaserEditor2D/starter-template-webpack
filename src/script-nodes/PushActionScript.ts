@@ -3,12 +3,12 @@
 
 /* START OF COMPILED CODE */
 
-import ScriptNode from "./ScriptNode";
+import ScriptNode from "../script-nodes-basic/ScriptNode";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class OnSceneAwakeScript extends ScriptNode {
+export default class PushActionScript extends ScriptNode {
 
 	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene) {
 		super(parent);
@@ -20,9 +20,20 @@ export default class OnSceneAwakeScript extends ScriptNode {
 
 	/* START-USER-CODE */
 
-	protected override awake(): void {
 
-		this.executeChildren();
+	override execute(args?: any): void {
+
+		this.scene.add.tween({
+			targets: this.gameObject,
+			scaleX: "*=0.8",
+			scaleY: "*=0.8",
+			duration: 80,
+			yoyo: true,
+			onYoyo: () => {
+
+				this.executeChildren(args);
+			}
+		});
 	}
 
 	/* END-USER-CODE */
