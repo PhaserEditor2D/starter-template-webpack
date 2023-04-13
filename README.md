@@ -132,9 +132,15 @@ We recommend using Visual Studio Code for editing the code files.
 
 In many tutorials about Phaser Editor 2D, the JavaScript files are loaded using the Asset Pack editor. When using Webpack this is not needed. Just use the Asset Pack editor for loading the art assets.
 
-### Scene and User Components configuration
+### Scene, User Components, and ScriptNode configuration
 
-The Scenes and User Components are configured to compile to TypeScript ES modules. Also, the compilers auto-import the classes used in the generated code.
+The Scenes, User Components, and ScriptNodes are configured to compile to TypeScript ES modules. Also, the compilers auto-import the classes used in the generated code.
+
+### ScriptNodes
+
+The `src/script-nodes-basic` folder contains the script nodes from the [script-nodes-basic](http://github.com/PhaserEditor2D/script-nodes-basic/) project.
+
+You can add your own script nodes to the `src/script-nodes` folder.
 
 ## About
 
