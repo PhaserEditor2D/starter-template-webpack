@@ -1,3 +1,8 @@
+## v1.1.0 - Apr 17, 2023
+
+* Updates to Phaser 3.60.
+* Gets Script Nodes.
+
 ## v1.0.2 - Mar 28, 2023
 
 * Fixes **RootScriptNode** typo.
