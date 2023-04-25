@@ -1,7 +1,10 @@
-## v1.1.0 - Apr 17, 2023
+## v1.0.3 - Apr 24, 2023
 
-* Updates to Phaser 3.60.
-* Gets Script Nodes.
+* Fixes `update()` and `awake()` events management.
+* Improves `OnEventScript`, it now can registers into different emitters: `scene.events`, `scene.input`, `scene.keyboard`, `gameObject`, etc...
+* Adds `EmitEventActionScript`, an action node for emitting an event to different emitters.
+* Removes `OnKeyboardEventScript` and `OnSceneAwakeScript`.
+* Allows passing multiple arguments to the `execute()` method.
 
 ## v1.0.2 - Mar 28, 2023
 
